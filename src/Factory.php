@@ -284,7 +284,7 @@ abstract class Factory
                 $parcelOne->setMaturity($maturity);
             }
 
-            if ($parcela['situacao']) {
+            if (array_key_exists('situacao', $parcela)) {
                 $parcelOne->setStatus($parcela['situacao']);
             }
 
