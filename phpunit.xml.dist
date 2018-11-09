@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/4.3/phpunit.xsd"
+    bootstrap="./vendor/autoload.php" colors="true" backupGlobals="false"
+    backupStaticAttributes="false" verbose="true"
+    stopOnError="true" stopOnFailure="false" stopOnIncomplete="true" stopOnSkipped="true">
+    <php>
+        <const name="APPLICATION_ENV" value="testing"/>
+    </php>
+
+    <testsuites>
+        <testsuite name="Shipment">
+            <directory>./tests/Shipment</directory>
+        </testsuite>
+        
+        <testsuite name="Received">
+            <directory>./tests/Received</directory>
+        </testsuite>
+
+        <testsuite name="Common">
+            <directory>./tests/Common</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <blacklist>
+            <directory suffix=".php">./vendor</directory>
+            <directory suffix=".php">./samples</directory>
+            <directory suffix=".php">./src/Common/Base/Type</directory>
+        </blacklist>
+
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory>./src</directory>
+        </whitelist>
+    </filter>
+</phpunit>
