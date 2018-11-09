@@ -4,30 +4,32 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e89c2e4036212361725393f52bac39aa",
+    "content-hash": "ab7d4a9f604948a56fdf7c18e74a6f24",
     "packages": [
         {
             "name": "knplabs/knp-snappy",
-            "version": "0.4.2",
+            "version": "0.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/snappy.git",
-                "reference": "99941b6f8475e2f02b8b89748504e5d471bded73"
+                "reference": "44f7a9b37d5686fd7db4c1e9569a802a5d16923f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/snappy/zipball/99941b6f8475e2f02b8b89748504e5d471bded73",
-                "reference": "99941b6f8475e2f02b8b89748504e5d471bded73",
+                "url": "https://api.github.com/repos/KnpLabs/snappy/zipball/44f7a9b37d5686fd7db4c1e9569a802a5d16923f",
+                "reference": "44f7a9b37d5686fd7db4c1e9569a802a5d16923f",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
-                "symfony/process": "~2.1"
+                "symfony/process": "~2.3|~3.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.7.*"
+                "phpunit/phpunit": "~4.7"
             },
             "suggest": {
+                "h4cc/wkhtmltoimage-amd64": "Provides wkhtmltoimage-amd64 binary for Linux-compatible machines, use version `~0.12` as dependency",
+                "h4cc/wkhtmltoimage-i386": "Provides wkhtmltoimage-i386 binary for Linux-compatible machines, use version `~0.12` as dependency",
                 "h4cc/wkhtmltopdf-amd64": "Provides wkhtmltopdf-amd64 binary for Linux-compatible machines, use version `~0.12` as dependency",
                 "h4cc/wkhtmltopdf-i386": "Provides wkhtmltopdf-i386 binary for Linux-compatible machines, use version `~0.12` as dependency",
                 "wemersonjanuario/wkhtmltopdf-windows": "Provides wkhtmltopdf executable for Windows, use version `~0.12` as dependency"
@@ -67,24 +69,24 @@
                 "thumbnail",
                 "wkhtmltopdf"
             ],
-            "time": "2015-09-16T12:34:39+00:00"
+            "time": "2015-11-17T13:16:27+00:00"
         },
         {
             "name": "kriansa/openboleto",
-            "version": "dev-master",
+            "version": "v1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/openboleto/openboleto.git",
-                "reference": "ad141d3d0bfb2a6a3fa20c254ad48b0131f346db"
+                "reference": "ae70c2502b12cfbdad28377cddd8014031de76ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/openboleto/openboleto/zipball/ad141d3d0bfb2a6a3fa20c254ad48b0131f346db",
-                "reference": "ad141d3d0bfb2a6a3fa20c254ad48b0131f346db",
+                "url": "https://api.github.com/repos/openboleto/openboleto/zipball/ae70c2502b12cfbdad28377cddd8014031de76ce",
+                "reference": "ae70c2502b12cfbdad28377cddd8014031de76ce",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.6"
+                "php": ">=5.3.0"
             },
             "type": "library",
             "autoload": {
@@ -98,25 +100,17 @@
             ],
             "authors": [
                 {
-                    "name": "José Frederico",
-                    "email": "contato@livetechtecnologia.com.br"
-                },
-                {
                     "name": "Daniel Garajau",
-                    "email": "daniel@garajau.com.br"
-                },
-                {
-                    "name": "Rogerio Muniz",
-                    "email": "rogerio@quilhasoft.com.br"
+                    "email": "kriansa@facebook.com"
                 }
             ],
             "description": "Biblioteca para geração de boletos bancários.",
-            "homepage": "http://github.com/openboleto/openboleto",
+            "homepage": "http://github.com/kriansa/openboleto",
             "keywords": [
                 "boleto",
                 "boleto bancario"
             ],
-            "time": "2018-09-25T20:38:32+00:00"
+            "time": "2013-08-04T20:53:31+00:00"
         },
         {
             "name": "respect/validation",
@@ -242,25 +236,25 @@
         },
         {
             "name": "symfony/process",
-            "version": "v2.8.47",
+            "version": "v3.4.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "a15cb61190c6fe37168600922e82295eb5e5449b"
+                "reference": "35c2914a9f50519bd207164c353ae4d59182c2cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/a15cb61190c6fe37168600922e82295eb5e5449b",
-                "reference": "a15cb61190c6fe37168600922e82295eb5e5449b",
+                "url": "https://api.github.com/repos/symfony/process/zipball/35c2914a9f50519bd207164c353ae4d59182c2cb",
+                "reference": "35c2914a9f50519bd207164c353ae4d59182c2cb",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9"
+                "php": "^5.5.9|>=7.0.8"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
@@ -287,7 +281,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-05T07:35:28+00:00"
+            "time": "2018-10-14T17:33:21+00:00"
         }
     ],
     "packages-dev": [
@@ -1914,7 +1908,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "kriansa/openboleto": 20,
         "mockery/mockery": 20
     },
     "prefer-stable": false,
