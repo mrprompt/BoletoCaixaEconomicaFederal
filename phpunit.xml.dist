@@ -13,10 +13,6 @@
             <directory>./tests/Shipment</directory>
         </testsuite>
         
-        <testsuite name="Received">
-            <directory>./tests/Received</directory>
-        </testsuite>
-
         <testsuite name="Common">
             <directory>./tests/Common</directory>
         </testsuite>
