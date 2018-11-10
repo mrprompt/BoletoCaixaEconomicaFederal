@@ -39,7 +39,7 @@
   "require": {
     "php"                       : "^7.1",
     "respect/validation"        : "^1.1.12",
-    "kriansa/openboleto"        : "^1.0",
+    "kriansa/openboleto"        : "dev-master",
     "knplabs/knp-snappy"        : "~0.4.2"
   },
   "require-dev": {

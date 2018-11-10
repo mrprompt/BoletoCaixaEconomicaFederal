@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ab7d4a9f604948a56fdf7c18e74a6f24",
+    "content-hash": "78ed589e286c0bd76f62982d2a6b17b4",
     "packages": [
         {
             "name": "knplabs/knp-snappy",
@@ -73,20 +73,20 @@
         },
         {
             "name": "kriansa/openboleto",
-            "version": "v1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/openboleto/openboleto.git",
-                "reference": "ae70c2502b12cfbdad28377cddd8014031de76ce"
+                "reference": "ad141d3d0bfb2a6a3fa20c254ad48b0131f346db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/openboleto/openboleto/zipball/ae70c2502b12cfbdad28377cddd8014031de76ce",
-                "reference": "ae70c2502b12cfbdad28377cddd8014031de76ce",
+                "url": "https://api.github.com/repos/openboleto/openboleto/zipball/ad141d3d0bfb2a6a3fa20c254ad48b0131f346db",
+                "reference": "ad141d3d0bfb2a6a3fa20c254ad48b0131f346db",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": ">=5.6"
             },
             "type": "library",
             "autoload": {
@@ -100,17 +100,25 @@
             ],
             "authors": [
                 {
+                    "name": "José Frederico",
+                    "email": "contato@livetechtecnologia.com.br"
+                },
+                {
                     "name": "Daniel Garajau",
-                    "email": "kriansa@facebook.com"
+                    "email": "daniel@garajau.com.br"
+                },
+                {
+                    "name": "Rogerio Muniz",
+                    "email": "rogerio@quilhasoft.com.br"
                 }
             ],
             "description": "Biblioteca para geração de boletos bancários.",
-            "homepage": "http://github.com/kriansa/openboleto",
+            "homepage": "http://github.com/openboleto/openboleto",
             "keywords": [
                 "boleto",
                 "boleto bancario"
             ],
-            "time": "2013-08-04T20:53:31+00:00"
+            "time": "2018-09-25T20:38:32+00:00"
         },
         {
             "name": "respect/validation",
@@ -1908,6 +1916,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "kriansa/openboleto": 20,
         "mockery/mockery": 20
     },
     "prefer-stable": false,

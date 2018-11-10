@@ -2,9 +2,10 @@ Boleto Caixa Econômica Federal
 =======================
 
 [![Build Status](https://travis-ci.org/mrprompt/BoletoCaixaEconomicaFederal.svg?branch=master)](https://travis-ci.org/mrprompt/BoletoCaixaEconomicaFederal)
-[![Code Climate](https://codeclimate.com/github/mrprompt/BoletoCaixaEconomicaFederal/badges/gpa.svg)](https://codeclimate.com/github/mrprompt/BoletoCaixaEconomicaFederal)
-[![Test Coverage](https://codeclimate.com/github/mrprompt/BoletoCaixaEconomicaFederal/badges/coverage.svg)](https://codeclimate.com/github/mrprompt/BoletoCaixaEconomicaFederal/coverage)
-[![Issue Count](https://codeclimate.com/github/mrprompt/BoletoCaixaEconomicaFederal/badges/issue_count.svg)](https://codeclimate.com/github/mrprompt/BoletoCaixaEconomicaFederal)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mrprompt/BoletoCaixaEconomicaFederal/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mrprompt/BoletoCaixaEconomicaFederal/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/mrprompt/BoletoCaixaEconomicaFederal/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/mrprompt/BoletoCaixaEconomicaFederal/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/mrprompt/BoletoCaixaEconomicaFederal/badges/build.png?b=master)](https://scrutinizer-ci.com/g/mrprompt/BoletoCaixaEconomicaFederal/build-status/master)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/mrprompt/BoletoCaixaEconomicaFederal/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
 
 Geração de Boletos e Bloquetos para a Caixa Econômica Federal.
 

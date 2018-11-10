@@ -1,21 +1,32 @@
 language: php
+sudo: false
+
+env:
+  global:
+    - GIT_COMMITTED_AT=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then git log -1 --pretty=format:%ct; else git log -1 --skip 1 --pretty=format:%ct; fi)
 
 php:
   - 7.1
   - 7.2
   - nightly
+  - hhvm
 
 matrix:
+  fast_finish: true
   allow_failures:
     - php: nightly
+    - php: hhvm
 
 before_script:
-  - composer selfupdate
-  - composer install --dev --prefer-dist
-  - composer require --dev codeclimate/php-test-reporter
+  - if [[ $TRAVIS_PHP_VERSION = '7.1' ]]; then PHPUNIT_FLAGS="--coverage-clover ./clover.xml"; else PHPUNIT_FLAGS=""; fi
+  
+install:
+  - composer self-update
+  - composer install --dev --prefer-dist -o
 
 script:
-  - ./vendor/bin/phpunit --coverage-clover tmp/clover.xml
+  - ./vendor/bin/phpunit $PHPUNIT_FLAGS
 
-after_success:
-  - ./vendor/bin/test-reporter --coverage-report tmp/clover.xml
+after_script:
+    - wget https://scrutinizer-ci.com/ocular.phar
+    - if [ -f clover.xml ]; then php ocular.phar code-coverage:upload --format=php-clover ./clover.xml; fi
