@@ -1,27 +1,27 @@
 <?php
 namespace MrPrompt\BoletoCaixaEconomicaFederal\Tests;
 
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Address;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Authorization;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Bank;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\BankAccount;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Billet;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Charge;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\ConsumerUnity;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\CreditCard;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Customer;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Dealership;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Document;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Email;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Holder;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Occurrence;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Parcel;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Parcels;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Person;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Phone;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Purchaser;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Seller;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Sequence;
+use MrPrompt\ShipmentCommon\Base\Address;
+use MrPrompt\ShipmentCommon\Base\Authorization;
+use MrPrompt\ShipmentCommon\Base\Bank;
+use MrPrompt\ShipmentCommon\Base\BankAccount;
+use MrPrompt\ShipmentCommon\Base\Billet;
+use MrPrompt\ShipmentCommon\Base\Charge;
+use MrPrompt\ShipmentCommon\Base\ConsumerUnity;
+use MrPrompt\ShipmentCommon\Base\CreditCard;
+use MrPrompt\ShipmentCommon\Base\Customer;
+use MrPrompt\ShipmentCommon\Base\Dealership;
+use MrPrompt\ShipmentCommon\Base\Document;
+use MrPrompt\ShipmentCommon\Base\Email;
+use MrPrompt\ShipmentCommon\Base\Holder;
+use MrPrompt\ShipmentCommon\Base\Occurrence;
+use MrPrompt\ShipmentCommon\Base\Parcel;
+use MrPrompt\ShipmentCommon\Base\Parcels;
+use MrPrompt\ShipmentCommon\Base\Person;
+use MrPrompt\ShipmentCommon\Base\Phone;
+use MrPrompt\ShipmentCommon\Base\Purchaser;
+use MrPrompt\ShipmentCommon\Base\Seller;
+use MrPrompt\ShipmentCommon\Base\Sequence;
 use DateTime;
 use Mockery as m;
 

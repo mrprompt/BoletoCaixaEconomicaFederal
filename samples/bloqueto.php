@@ -6,9 +6,9 @@
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Cart;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Sequence;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Charge;
+use MrPrompt\ShipmentCommon\Base\Cart;
+use MrPrompt\ShipmentCommon\Base\Sequence;
+use MrPrompt\ShipmentCommon\Base\Charge;
 use MrPrompt\BoletoCaixaEconomicaFederal\Shipment\PaymentSlip;
 use MrPrompt\BoletoCaixaEconomicaFederal\Factory;
 
@@ -17,7 +17,7 @@ require __DIR__ . '/bootstrap.php';
 /* @var $today \DateTime */
 $today      = new DateTime();
 
-/* @var $cart \MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Cart */
+/* @var $cart \MrPrompt\ShipmentCommon\Base\Cart */
 $cart       = new Cart();
 
 /* @var $row array */
@@ -35,7 +35,7 @@ foreach ($row as $linha) {
     echo 'Comprador: ', $item->getPurchaser()->getName(), PHP_EOL;
     echo 'Parcelas : ', PHP_EOL;
 
-    /* @var $parcel \MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Parcel */
+    /* @var $parcel \MrPrompt\ShipmentCommon\Base\Parcel */
     foreach ($item->getParcels() as $parcel) {
         echo '      # ', $parcel->getKey(), PHP_EOL;
         echo '     R$ ', number_format($parcel->getPrice(), 2, ',', '.'), PHP_EOL;
@@ -48,10 +48,10 @@ foreach ($row as $linha) {
 }
 
 try {
-    /* @var $sequence \MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Sequence */
+    /* @var $sequence \MrPrompt\ShipmentCommon\Base\Sequence */
     $sequence   = new Sequence(1);
 
-    /* @var $customer \MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Customer */
+    /* @var $customer \MrPrompt\ShipmentCommon\Base\Customer */
     $customer   = Factory::createCustomerFromArray(array_shift($row));
 
     /* @var $exporter \MrPrompt\BoletoCaixaEconomicaFederal\Shipment\File */

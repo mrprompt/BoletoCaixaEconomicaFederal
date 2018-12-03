@@ -38,7 +38,7 @@
   ],
   "require": {
     "php"                       : "^7.1",
-    "respect/validation"        : "^1.1.12",
+    "mrprompt/shipmentcommon"   : "^2.0.2",
     "kriansa/openboleto"        : "dev-master",
     "knplabs/knp-snappy"        : "~0.4.2"
   },

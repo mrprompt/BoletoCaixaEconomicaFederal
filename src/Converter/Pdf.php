@@ -1,5 +1,5 @@
 <?php
-namespace MrPrompt\BoletoCaixaEconomicaFederal\Common\Converter;
+namespace MrPrompt\BoletoCaixaEconomicaFederal\Converter;
 
 use Knp\Snappy\Pdf as Converter;
 

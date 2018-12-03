@@ -1,15 +1,15 @@
 <?php
 namespace MrPrompt\BoletoCaixaEconomicaFederal\Shipment;
 
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Cart;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Customer;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Sequence;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Converter\Pdf;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Util\Number;
-use DateInterval;
 use DateTime;
+use DateInterval;
 use OpenBoleto\Agente;
 use OpenBoleto\Banco\Caixa;
+use MrPrompt\ShipmentCommon\Base\Cart;
+use MrPrompt\ShipmentCommon\Util\Number;
+use MrPrompt\ShipmentCommon\Base\Customer;
+use MrPrompt\ShipmentCommon\Base\Sequence;
+use MrPrompt\BoletoCaixaEconomicaFederal\Converter\Pdf;
 
 /**
  * Payment Slip file class
