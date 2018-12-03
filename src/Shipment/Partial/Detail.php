@@ -15,7 +15,7 @@ use MrPrompt\ShipmentCommon\Base\Sequence;
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
-class Detail
+class Detail extends \stdClass
 {
     /**
      * Customer
