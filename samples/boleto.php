@@ -8,9 +8,9 @@
  */
 use MrPrompt\BoletoCaixaEconomicaFederal\Factory;
 use MrPrompt\BoletoCaixaEconomicaFederal\Shipment\Billet;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Cart;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Charge;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Sequence;
+use MrPrompt\ShipmentCommon\Base\Cart;
+use MrPrompt\ShipmentCommon\Base\Charge;
+use MrPrompt\ShipmentCommon\Base\Sequence;
 
 require __DIR__ . '/bootstrap.php';
 

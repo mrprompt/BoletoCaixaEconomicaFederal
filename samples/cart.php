@@ -4,9 +4,9 @@
  *
  * @author Thiago Paes <mrprompt@gmail.com>
  */
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Bank;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Charge;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Occurrence;
+use MrPrompt\ShipmentCommon\Base\Bank;
+use MrPrompt\ShipmentCommon\Base\Charge;
+use MrPrompt\ShipmentCommon\Base\Occurrence;
 
 /* @var $vencimento \DateTime */
 $vencimento = (new DateTime())->add(new DateInterval('P30D'));

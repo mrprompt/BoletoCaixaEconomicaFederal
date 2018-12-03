@@ -1,14 +1,14 @@
 <?php
 namespace MrPrompt\BoletoCaixaEconomicaFederal\Shipment\Partial;
 
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Authorization;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Billet;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Charge;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Customer;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Parcels;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Purchaser;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Seller;
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Sequence;
+use MrPrompt\ShipmentCommon\Base\Authorization;
+use MrPrompt\ShipmentCommon\Base\Billet;
+use MrPrompt\ShipmentCommon\Base\Charge;
+use MrPrompt\ShipmentCommon\Base\Customer;
+use MrPrompt\ShipmentCommon\Base\Parcels;
+use MrPrompt\ShipmentCommon\Base\Purchaser;
+use MrPrompt\ShipmentCommon\Base\Seller;
+use MrPrompt\ShipmentCommon\Base\Sequence;
 
 /**
  * File detail

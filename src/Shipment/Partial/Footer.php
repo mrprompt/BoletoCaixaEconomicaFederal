@@ -1,7 +1,7 @@
 <?php
 namespace MrPrompt\BoletoCaixaEconomicaFederal\Shipment\Partial;
 
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Base\Sequence;
+use MrPrompt\ShipmentCommon\Base\Sequence;
 
 /**
  * File footer

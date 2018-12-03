@@ -1,7 +1,7 @@
 <?php
 namespace MrPrompt\BoletoCaixaEconomicaFederal\Tests\Shipment\Partial;
 
-use MrPrompt\BoletoCaixaEconomicaFederal\Common\Util\ChangeProtectedAttribute;
+use MrPrompt\BoletoCaixaEconomicaFederal\Tests\ChangeProtectedAttribute;
 use MrPrompt\BoletoCaixaEconomicaFederal\Shipment\Partial\Footer;
 use MrPrompt\BoletoCaixaEconomicaFederal\Tests\Mock as BoletoCaixaEconomicaFederalMock;
 use Mockery as m;
