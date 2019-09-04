@@ -18,13 +18,6 @@ use MrPrompt\BoletoCaixaEconomicaFederal\Converter\Pdf;
 final class Billet
 {
     /**
-     * File name template
-     *
-     * @var string
-     */
-    const TEMPLATE_GENERATED = '{CLIENT}_{DDMMYYYY}_{SEQUENCE}.HTML';
-
-    /**
      * @var DateTime
      */
     protected $now;
@@ -48,6 +41,7 @@ final class Billet
      * @var string
      */
     protected $storage;
+    private $fileNameCreator;
 
     /**
      * @param Customer $customer
@@ -57,6 +51,7 @@ final class Billet
      */
     public function __construct(Customer $customer, Sequence $sequence, DateTime $today, $storageDir = null)
     {
+        $this->fileNameCreator = new FileNameCreator();
         $this->customer     = $customer;
         $this->sequence     = $sequence;
         $this->now          = $today;
@@ -84,31 +79,10 @@ final class Billet
     }
 
     /**
-     * Create the file name
-     *
-     * @return string
-     */
-    protected function createFilename()
-    {
-        $search = [
-            '{CLIENT}',
-            '{DDMMYYYY}',
-            '{SEQUENCE}'
-        ];
-
-        $replace = [
-            Number::zeroFill($this->customer->getCode(), 6, Number::FILL_LEFT),
-            $this->now->format('dmY'),
-            Number::zeroFill($this->sequence->getValue(), 5, Number::FILL_LEFT),
-        ];
-
-        return str_replace($search, $replace, self::TEMPLATE_GENERATED);
-    }
-
-    /**
      * Save the output result
      *
      * @return string
+     * @throws \Exception
      */
     public function save()
     {
@@ -116,7 +90,7 @@ final class Billet
         $item       = $this->cart->offsetGet(0);
 
         /* @var filename string */
-        $filename   = $this->createFilename();
+        $filename   = $this->fileNameCreator->create($this->customer, $this->sequence, new DateTime());
 
         /* @var $outputFile string */
         $outputFile = $this->storage . DIRECTORY_SEPARATOR . $filename;
@@ -205,7 +179,7 @@ final class Billet
      */
     public function read()
     {
-        $filename       = $this->createFilename();
+        $filename       = $this->fileNameCreator->create($this->customer, $this->sequence, new DateTime());
         $inputFile      = $this->storage . DIRECTORY_SEPARATOR . $filename;
 
         return file_get_contents($inputFile);

@@ -7,6 +7,8 @@ use Knp\Snappy\Pdf as Converter;
  * PDF Converter
  *
  * @author Thiago Paes <mrprompt@gmail.com>
+ *
+ * @codeCoverageIgnore
  */
 class Pdf
 {
